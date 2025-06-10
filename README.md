@@ -2,146 +2,145 @@
 
 ![Dot Net](https://github.com/ardupilot/missionplanner/actions/workflows/main.yml/badge.svg) ![Android](https://github.com/ardupilot/missionplanner/actions/workflows/android.yml/badge.svg) ![OSX/IOS](https://github.com/ardupilot/missionplanner/actions/workflows/mac.yml/badge.svg)
 
-Website : http://ardupilot.org/planner/
+Сайт: http://ardupilot.org/planner/
 
-Forum : http://discuss.ardupilot.org/c/ground-control-software/mission-planner
+Форум: http://discuss.ardupilot.org/c/ground-control-software/mission-planner
 
-Download latest stable version : http://firmware.ardupilot.org/Tools/MissionPlanner/MissionPlanner-latest.msi
+Скачать последнюю стабильную версию: http://firmware.ardupilot.org/Tools/MissionPlanner/MissionPlanner-latest.msi
 
-Changelog : https://github.com/ArduPilot/MissionPlanner/blob/master/ChangeLog.txt
+История изменений: https://github.com/ArduPilot/MissionPlanner/blob/master/ChangeLog.txt
 
-License : https://github.com/ArduPilot/MissionPlanner/blob/master/COPYING.txt
+Лицензия: https://github.com/ArduPilot/MissionPlanner/blob/master/COPYING.txt
 
 
-## How to compile
+## Как компилировать
 
-### On Windows (Recommended)
+### В Windows (рекомендуется)
 
-#### 1. Install software
+#### 1. Установка программного обеспечения
 
-##### Main requirements
+##### Основные требования
 
-Currently, Mission Planner needs:
+В настоящее время Mission Planner требует:
 
 Visual Studio 2022
 
-##### IDE
+##### Среда разработки
 
 ### Visual Studio Community
-To compile Mission Planner, we recommend using Visual Studio. You can download Visual Studio Community from the [Visual Studio Download page](https://visualstudio.microsoft.com/downloads/ "Visual Studio Download page").
+Для компиляции Mission Planner рекомендуется использовать Visual Studio. Visual Studio Community можно скачать со [страницы загрузки Visual Studio](https://visualstudio.microsoft.com/downloads/ "Visual Studio Download page").
 
-Visual Studio is a comprehensive suite with built-in Git support, but it can be overwhelming due to its complexity. To streamline the installation process, you can customize your installation by selecting the relevant "Workloads" and "Individual components" based on your software development needs.
+Visual Studio представляет собой комплексный пакет с встроенной поддержкой Git, но из-за своей сложности он может показаться перегруженным. Чтобы упростить процесс установки, вы можете настроить его, выбрав соответствующие "Workloads" и "Individual components" в зависимости от ваших потребностей.
 
-To simplify this selection process, we have provided a configuration file that specifies the components required for MissionPlanner development. Here's how you can use it:
+Чтобы упростить этот выбор, мы подготовили файл конфигурации, в котором указаны необходимые компоненты для разработки MissionPlanner. Как им воспользоваться:
 
-1. Go to "More" in the Visual Studio installer.
-2. Select "Import configuration."
-3. Use the following file: [vs2022.vsconfig](https://raw.githubusercontent.com/ArduPilot/MissionPlanner/master/vs2022.vsconfig "vs2022.vsconfig").
+1. В установщике Visual Studio откройте пункт "More".
+2. Выберите "Import configuration".
+3. Используйте следующий файл: [vs2022.vsconfig](https://raw.githubusercontent.com/ArduPilot/MissionPlanner/master/vs2022.vsconfig "vs2022.vsconfig").
 
-By following these steps, you'll have the necessary components installed and ready for Mission Planner development.
+После выполнения этих шагов будут установлены все необходимые компоненты для разработки Mission Planner.
 
 ###### VSCode
-Currently VSCode with C# plugin is able to parse the code but cannot build.
+В настоящее время VSCode с плагином C# способен разобрать код, но не может его собрать.
 
-#### 2. Get the code
+#### 2. Получение кода
 
-If you get Visual Studio Community, you should be able to use Git from the IDE. 
-Clone `https://github.com/ArduPilot/MissionPlanner.git` to get the full code.
+Если вы установили Visual Studio Community, вы сможете использовать Git прямо из среды IDE. Клонируйте репозиторий `https://github.com/ArduPilot/MissionPlanner.git`, чтобы получить полный исходный код.
 
-In case you didn't install an IDE, you will need to manually install Git. Please follow instruction in https://ardupilot.org/dev/docs/where-to-get-the-code.html#downloading-the-code-using-git
+Если IDE не установлена, Git придется установить вручную. Пожалуйста, следуйте инструкции https://ardupilot.org/dev/docs/where-to-get-the-code.html#downloading-the-code-using-git
 
-Open a git bash terminal in the MissionPlanner directory and type, "git submodule update --init" to download all submodules
+Откройте терминал git bash в каталоге MissionPlanner и введите "git submodule update --init", чтобы загрузить все подмодули.
 
-#### 3. Build
+#### 3. Сборка
 
-To build the code:
-- Open MissionPlanner.sln with Visual Studio
-- From the Build menu, select "Build MissionPlanner"
+Чтобы собрать код:
+- Откройте MissionPlanner.sln в Visual Studio
+- В меню Build выберите "Build MissionPlanner"
 
-### On other systems
-Building Mission Planner on other systems isn't support currently.
+### На других системах
+В настоящее время сборка Mission Planner на других системах не поддерживается.
 
-## Launching Mission Planner on other system
+## Запуск Mission Planner на других системах
 
-Mission Planner is available for Android via the Play Store. https://play.google.com/store/apps/details?id=com.michaeloborne.MissionPlanner
-Mission Planner can be used with Mono on Linux systems. Be aware that not all functions are available on Linux.
-Native MacOS and iOS support is experimental and not recommended for inexperienced users. https://github.com/ArduPilot/MissionPlanner/releases/tag/osxlatest 
-For MacOS users it is recommended to use Mission Planner for Windows via Boot Camp or Parallels (or equivalent).
+Mission Planner доступен для Android через Play Store: https://play.google.com/store/apps/details?id=com.michaeloborne.MissionPlanner
+Mission Planner может работать с Mono в Linux. Учтите, что не все функции доступны на Linux.
+Нативная поддержка MacOS и iOS экспериментальная и не рекомендуется неопытным пользователям: https://github.com/ArduPilot/MissionPlanner/releases/tag/osxlatest
+Пользователям MacOS рекомендуется запускать Mission Planner для Windows через Boot Camp или Parallels (или аналогичные решения).
 
-### On Linux
+### На Linux
 
-#### Requirements
+#### Требования
 
-Those instructions were tested on Ubuntu 20.04.
-Please install Mono, either :
+Эти инструкции проверены на Ubuntu 20.04.
+Установите Mono одной из команд:
 - `sudo apt install mono-complete mono-runtime libmono-system-windows-forms4.0-cil libmono-system-core4.0-cil libmono-winforms4.0-cil libmono-corlib4.0-cil libmono-system-management4.0-cil libmono-system-xml-linq4.0-cil`
 
-#### Launching
+#### Запуск
 
-- Get the lastest zipped version of Mission Planner here : https://firmware.ardupilot.org/Tools/MissionPlanner/MissionPlanner-latest.zip
-- Unzip in the directory you want
-- Go into the directory
-- run with `mono MissionPlanner.exe`
+- Получите последнюю архивную версию Mission Planner здесь: https://firmware.ardupilot.org/Tools/MissionPlanner/MissionPlanner-latest.zip
+- Распакуйте архив в нужный каталог
+- Перейдите в этот каталог
+- Запустите `mono MissionPlanner.exe`
 
-You can debug Mission Planner on Mono with `MONO_LOG_LEVEL=debug mono MissionPlanner.exe`
+Отладить Mission Planner на Mono можно с помощью `MONO_LOG_LEVEL=debug mono MissionPlanner.exe`
 
-### External Services Used
+### Используемые внешние сервисы
 
-| Source | Use | How to disable | Custodian |
+| Источник | Назначение | Как отключить | Ответственный |
 |---|---|---|---|
-| https://firmware.oborne.me  | used as a global cdn for checking for MP update check - checked once per day at startup | edit missionplanner.exe.config | Michael Oborne |
-| https://firmware.ardupilot.org  | used for updates to stable, firmware metadata, firmware, user alerts, gstreamer, SRTM, SITL | updates to stable (edit missionplanner.exe.config) - all others Not possible | Ardupilot Team |
-| https://github.com/ | used for updates to beta | edit missionplanner.exe.config | Michael Oborne |
-| https://raw.githubusercontent.com | old param metadata, sitl config files | Not possible | Ardupilot Team |
-| https://api.github.com/ | ardupilot preload param files | Not possible | Ardupilot Team |
-| https://raw.oborne.me/  | used as glocal cdn for parameter metadata generator, no longer primary source | only used at user request to regenerate, edit missionplanner.exe.config | Michael Oborne |
-| https://maps.google.com  | used for elevation api - removed due to abuse | N/A | N/A |
-| https://discuss.cubepilot.org/ | use for SB2 reporting - only on affected boards when user enters details | only used at user request | CubePilot |
-| https://altitudeangel.com  | utm data - user enabled | only used at user request | Altitude Angel |
-| https://autotest.ardupilot.org  | dataflash log meta data, parameter metadata | Not Possible | Ardupilot Team |
-| Many | your choice of map provider google/bing/openstreetmap/etc | User selectable | User/Many |
-| https://www.cloudflare.com | geo location provider - for NFZ selection | Not Possible | Michael Oborne |
-| https://esua.cad.gov.hk | HK no fly zones - user enabled | User selectable | HK Gov |
-| https://ssl.google-analytics.com | Google Analytics Anonymous Stats - Screen Loads, Exceptions/Crashs, Events (Connect), Startup Timing, FW upload (FW Type and Board Type) | disable in Config > Planner > OptOut Anon Stats | Michael Oborne |
-| https://api.dronelogbook.com | logging - disabled | N/A | N/A |
-| https://ardupilot.org | help urls on many pages | User Initiated | ArduPilot Team |
-| https://www.youtube.com | help videos on many pages | User Initiated | ArduPilot Team |
-| https://files.rfdesign.com.au | RFD firmwares | User Initiated | RFDesign |
-| https://teck.airmarket.io | airmarket - disabled | N/A | N/A |
+| https://firmware.oborne.me | глобальный CDN для проверки обновлений MP (проверяется раз в сутки при запуске) | изменить missionplanner.exe.config | Michael Oborne |
+| https://firmware.ardupilot.org | обновления stable, метаданные прошивок, сами прошивки, уведомления, gstreamer, SRTM, SITL | обновления stable (изменить missionplanner.exe.config) - остальное невозможно | Ardupilot Team |
+| https://github.com/ | обновления beta | изменить missionplanner.exe.config | Michael Oborne |
+| https://raw.githubusercontent.com | старые метаданные параметров, конфигурационные файлы SITL | невозможно | Ardupilot Team |
+| https://api.github.com/ | предварительная загрузка параметров ardupilot | невозможно | Ardupilot Team |
+| https://raw.oborne.me/ | локальный CDN для генератора метаданных параметров, больше не основной источник | используется только по запросу пользователя, изменить missionplanner.exe.config | Michael Oborne |
+| https://maps.google.com | API высот (удалено из-за злоупотребления) | N/A | N/A |
+| https://discuss.cubepilot.org/ | отчеты SB2 - только на соответствующих платах при вводе данных пользователем | используется только по запросу пользователя | CubePilot |
+| https://altitudeangel.com | данные UTM - включаются пользователем | используется только по запросу пользователя | Altitude Angel |
+| https://autotest.ardupilot.org | метаданные журналов dataflash, метаданные параметров | невозможно | Ardupilot Team |
+| Many | выбор картографического провайдера google/bing/openstreetmap/etc | выбирает пользователь | Пользователь/разные |
+| https://www.cloudflare.com | геолокация для выбора NFZ | невозможно | Michael Oborne |
+| https://esua.cad.gov.hk | зоны запрета полетов HK - включается пользователем | пользователь выбирает | HK Gov |
+| https://ssl.google-analytics.com | Google Analytics Анонимная статистика - загрузки экранов, исключения/сбои, события (подключение), время запуска, загрузка прошивки (тип и плата) | отключается в Config > Planner > OptOut Anon Stats | Michael Oborne |
+| https://api.dronelogbook.com | ведение логов - отключено | N/A | N/A |
+| https://ardupilot.org | ссылки на справку на многих страницах | вызывается пользователем | ArduPilot Team |
+| https://www.youtube.com | обучающие видео на многих страницах | вызывается пользователем | ArduPilot Team |
+| https://files.rfdesign.com.au | прошивки RFD | вызывается пользователем | RFDesign |
+| https://teck.airmarket.io | airmarket - отключено | N/A | N/A |
 
-### Offline Use - No Internet
+### Офлайн-использование - без интернета
 
-| Location | Use | Transferable between pcs |
+| Расположение | Назначение | Можно перенести между ПК |
 |---|---|---|
-| C:\ProgramData\Mission Planner\gmapcache | Map cache | yes |
-| C:\ProgramData\Mission Planner\srtm | Elevation data cache | yes |
-| C:\ProgramData\Mission Planner\\*.pdef.xml | Parameter cache | yes |
-| C:\ProgramData\Mission Planner\LogMessages*.xml | DF Log metadata cache | yes |
+| C:\ProgramData\Mission Planner\gmapcache | Кэш карт | да |
+| C:\ProgramData\Mission Planner\srtm | Кэш данных высот | да |
+| C:\ProgramData\Mission Planner\\*.pdef.xml | Кэш параметров | да |
+| C:\ProgramData\Mission Planner\LogMessages*.xml | Кэш метаданных DF логов | да |
 
-on linux this is in /home/<user>/.local/share/Mission Planner/
+В Linux это каталог /home/<user>/.local/share/Mission Planner/
 
-### Offline Data Supported
-#### Elevation
-* SRTM Cache
-* GeoTiff's in WGS84/EGM96
+### Поддерживаемые офлайн-данные
+#### Высота
+* Кэш SRTM
+* GeoTiff в WGS84/EGM96
 * DTED
 
-#### Images
-* Map Cache
+#### Изображения
+* Кэш карт
 * WMS
 * WMTS
 * GDAL
 
-### Paths used - Default
+### Используемые пути по умолчанию
 
-| Location | Use |
+| Расположение | Назначение |
 |---|---|
-| C:\ProgramData\Mission Planner | All cross user content |
-| C:\Users\USERNAME\Documents\Mission Planner | All per user content |
+| C:\ProgramData\Mission Planner | Общие данные для всех пользователей |
+| C:\Users\USERNAME\Documents\Mission Planner | Данные конкретного пользователя |
 
-on linux this is in /home/<user>/.local/share/Mission Planner/
+В Linux это каталог /home/<user>/.local/share/Mission Planner/
 
 ### CA Cert
-A CA cert is installed to the root store and used to sign the windows serial port drivers, and is installed as part of the MSI install.
+Сертификат центра сертификации устанавливается в корневое хранилище и используется для подписи драйверов последовательного порта Windows. Он устанавливается в рамках MSI.
 
 [![FlagCounter](https://s01.flagcounter.com/count2/A4bA/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_40/viewers_0/labels_1/pageviews_0/flags_0/percent_0/)](https://info.flagcounter.com/A4bA)
