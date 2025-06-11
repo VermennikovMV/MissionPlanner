@@ -13,9 +13,9 @@ xmlns:Custom="using:Custom"
 xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
 xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
-> <Grid><Button Name="BUT_Find" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="230,11,0,0" Width="103" Height="19">Find</Button>
-<Button Name="BUT_rerequestparams" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="121,11,0,0" Width="103" Height="19">Refresh Params</Button>
-<Button Name="BUT_writePIDS" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="12,11,0,0" Width="103" Height="19">Write Params</Button>
+> <Grid><Button Name="BUT_Find" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="230,11,0,0" Width="103" Height="19">Найти</Button>
+<Button Name="BUT_rerequestparams" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="121,11,0,0" Width="103" Height="19">Обновить параметры</Button>
+<Button Name="BUT_writePIDS" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="12,11,0,0" Width="103" Height="19">Записать параметры</Button>
 <Grid Name="tableLayoutPanel1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,36,0,0" Width="626" Height="190">
 </Grid>
 </Grid></UserControl>

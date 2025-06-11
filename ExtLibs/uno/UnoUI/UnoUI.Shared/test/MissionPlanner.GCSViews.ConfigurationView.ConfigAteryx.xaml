@@ -13,18 +13,18 @@ xmlns:Custom="using:Custom"
 xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
 xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
-> <Grid><Button Name="BUT_read_flash" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="820,545,0,0" Width="137" Height="23">Read Flash</Button>
-<Button Name="BUT_write_flash" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="820,514,0,0" Width="137" Height="23">Write Flash</Button>
+> <Grid><Button Name="BUT_read_flash" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="820,545,0,0" Width="137" Height="23">Читать флеш</Button>
+<Button Name="BUT_write_flash" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="820,514,0,0" Width="137" Height="23">Записать флеш</Button>
 <Grid Name="groupBox13" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="552,536,0,0" Width="260" Height="42">
 <Custom:DecimalUpDown Name="ROLL_TO_ELEV" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="148,12,0,0" Width="104"></Custom:DecimalUpDown>
 </Grid>
 <Grid Name="groupBox12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="552,433,0,0" Width="260" Height="106">
 <Custom:DecimalUpDown Name="ARSPD_U_LIM" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="148,73,0,0" Width="104"></Custom:DecimalUpDown>
-<TextBlock Name="label42" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="8,78,0,0" Width="94" Height="16">Max Airspeed</TextBlock>
+<TextBlock Name="label42" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="8,78,0,0" Width="94" Height="16">Макс. скорость</TextBlock>
 <Custom:DecimalUpDown Name="ARSPD_L_LIM" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="148,44,0,0" Width="104"></Custom:DecimalUpDown>
-<TextBlock Name="label43" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="8,49,0,0" Width="121" Height="16">Min Airspeed</TextBlock>
+<TextBlock Name="label43" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="8,49,0,0" Width="121" Height="16">Мин. скорость</TextBlock>
 <Custom:DecimalUpDown Name="CRUISE_ARSPD" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="148,16,0,0" Width="104"></Custom:DecimalUpDown>
-<TextBlock Name="label44" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="8,21,0,0" Width="48" Height="16">Cruise</TextBlock>
+<TextBlock Name="label44" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="8,21,0,0" Width="48" Height="16">Крейсерская</TextBlock>
 </Grid>
 <Grid Name="groupBox11" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="284,502,0,0" Width="260" Height="77">
 <Custom:DecimalUpDown Name="LND_APCH_SPD" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="148,44,0,0" Width="104"></Custom:DecimalUpDown>

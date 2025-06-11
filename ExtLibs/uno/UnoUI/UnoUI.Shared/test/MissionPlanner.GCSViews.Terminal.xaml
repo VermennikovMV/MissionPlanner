@@ -14,15 +14,15 @@ xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
 xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
 > <Grid><ComboBox Name="CMB_boardtype" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="4,4,0,0" Width="86" Height="21"></ComboBox>
-<Button Name="BUT_disconnect" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="617,3,0,0" Width="87" Height="23">Disconnect</Button>
-<Button Name="BUT_ConnectAPM" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="96,3,0,0" Width="87" Height="23">Connect</Button>
-<Button Name="BUT_logbrowse" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="375,32,0,0" Width="87" Height="23">Log Browse</Button>
-<Button Name="Logs" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="282,32,0,0" Width="87" Height="23">Log Download</Button>
-<Button Name="BUTtests" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="189,32,0,0" Width="87" Height="23">Tests</Button>
-<Button Name="BUTradiosetup" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="96,32,0,0" Width="87" Height="23">Setup Radio</Button>
-<Button Name="BUTsetupshow" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="3,32,0,0" Width="87" Height="23">Show Settings</Button>
-<TextBlock Name="TXT_terminal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,60,0,0" Width="708" Height="400">*NOTE* Please click connect above
-CLI Works only on first connect of power, log download only over USB
-Newer versions only support log download via mavlink, please see the flightdata > dataflahs logs
+<Button Name="BUT_disconnect" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="617,3,0,0" Width="87" Height="23">Отключить</Button>
+<Button Name="BUT_ConnectAPM" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="96,3,0,0" Width="87" Height="23">Подключить</Button>
+<Button Name="BUT_logbrowse" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="375,32,0,0" Width="87" Height="23">Просмотр логов</Button>
+<Button Name="Logs" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="282,32,0,0" Width="87" Height="23">Скачать логи</Button>
+<Button Name="BUTtests" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="189,32,0,0" Width="87" Height="23">Тесты</Button>
+<Button Name="BUTradiosetup" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="96,32,0,0" Width="87" Height="23">Настройка радио</Button>
+<Button Name="BUTsetupshow" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="3,32,0,0" Width="87" Height="23">Показать настройки</Button>
+<TextBlock Name="TXT_terminal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,60,0,0" Width="708" Height="400">*ПРИМЕЧАНИЕ* Нажмите «Подключить» выше
+CLI работает только при первом включении питания, загрузка логов возможна только по USB.
+Новые версии поддерживают загрузку логов только через mavlink, смотрите FlightData > журналы Dataflash.
 </TextBlock>
 </Grid></UserControl>

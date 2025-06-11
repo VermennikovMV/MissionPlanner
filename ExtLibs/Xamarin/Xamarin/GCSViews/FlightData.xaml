@@ -21,37 +21,37 @@
         <controls:HUD BackgroundColor="Blue" x:Name="hud1" Grid.Column="0" Grid.Row="0"/>
         <tabView:TabViewControl BackgroundColor="red" Grid.Column="0" Grid.Row="1" Grid.RowSpan="3">
             <tabView:TabViewControl.ItemSource>
-                <tabView:TabItem HeaderText="Map" >
+                <tabView:TabItem HeaderText="Карта" >
                     <Grid Margin="0" Padding="0">
                         <GMap:GMapControl  BackgroundColor="CornflowerBlue" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  x:Name="gMapControl1"/>
                     </Grid>
                 </tabView:TabItem>
-                <tabView:TabItem HeaderText="Actions">
+                <tabView:TabItem HeaderText="Действия">
                     <ScrollView>                        
                         <StackLayout>                            
-                            <Button x:Name="Arm" Text="Arm"  Clicked="Arm_OnClicked"></Button>
-                            <Button x:Name="Disarm" Text="Disarm"  Clicked="Disarm_OnClicked"></Button>
+                            <Button x:Name="Arm" Text="Запуск"  Clicked="Arm_OnClicked"></Button>
+                            <Button x:Name="Disarm" Text="Остановить"  Clicked="Disarm_OnClicked"></Button>
                             <Picker x:Name="Mode"  SelectedIndexChanged="Mode_OnSelectedIndexChanged"></Picker>
-                            <Button x:Name="Set_Mode" Text="Set Mode"  Clicked="Set_Mode_OnClicked"></Button>
-                            <Button x:Name="Get_Mission" Text="Get Mission"  Clicked="Get_Mission_OnClicked"></Button>
-                            <Button x:Name="Get_Fence" Text="Get Fence"  Clicked="Get_Fence_OnClicked"></Button>
-                            <Button x:Name="Get_Rally" Text="Get Rally"  Clicked="Get_Rally_OnClicked"></Button>
-                            <Button x:Name="Takeoff_2m"  Text="TakeOff - 2m" Clicked="Takeoff___2m_OnClicked"></Button>
+                            <Button x:Name="Set_Mode" Text="Установить режим"  Clicked="Set_Mode_OnClicked"></Button>
+                            <Button x:Name="Get_Mission" Text="Получить миссию"  Clicked="Get_Mission_OnClicked"></Button>
+                            <Button x:Name="Get_Fence" Text="Получить ограждение"  Clicked="Get_Fence_OnClicked"></Button>
+                            <Button x:Name="Get_Rally" Text="Получить точки сбора"  Clicked="Get_Rally_OnClicked"></Button>
+                            <Button x:Name="Takeoff_2m"  Text="Взлет - 2 м" Clicked="Takeoff___2m_OnClicked"></Button>
                         </StackLayout>
                     </ScrollView>
                 </tabView:TabItem>
-                <tabView:TabItem HeaderText="Telemetry Logs">
+                <tabView:TabItem HeaderText="Журналы телеметрии">
                     <ScrollView>
                         <StackLayout>
-                            <Button x:Name="BUT_loadtelem" Clicked="BUT_loadtelem_Click" Text="Load Log"/>
+                            <Button x:Name="BUT_loadtelem" Clicked="BUT_loadtelem_Click" Text="Загрузить лог"/>
                             <Label x:Name="lbl_playbackspeed" Text="x 1.0"/>
                             <Label x:Name="lbl_logpercent" Text="0.00 %"/>
 
                             <Slider  x:Name="tracklog" ValueChanged="tracklog_Scroll" Minimum="0" Maximum="100"/>
 
                             <Label x:Name="LBL_logfn" Text=""/>
-                            <Button x:Name="BUT_log2kml" Clicked="BUT_log2kml_Click" Text="Tlog &gt; Kml or Graph"/>
-                            <Button x:Name="BUT_playlog" Clicked="BUT_playlog_Click" Text="Play/Pause"/>
+                            <Button x:Name="BUT_log2kml" Clicked="BUT_log2kml_Click" Text="Tlog &gt; Kml или График"/>
+                            <Button x:Name="BUT_playlog" Clicked="BUT_playlog_Click" Text="Пуск/Пауза"/>
                         </StackLayout>
                     </ScrollView>
                 </tabView:TabItem>

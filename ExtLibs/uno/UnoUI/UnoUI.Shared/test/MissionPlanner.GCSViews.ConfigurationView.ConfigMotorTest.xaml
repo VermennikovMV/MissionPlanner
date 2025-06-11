@@ -18,11 +18,10 @@ mc:Ignorable="d"
 <TextBlock Name="label3" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="129,16,0,0" Width="63" Height="17">Duration (s)</TextBlock>
 <Custom:DecimalUpDown Name="NUM_thr_percent" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="66,14,0,0" Width="54"></Custom:DecimalUpDown>
 <Custom:DecimalUpDown Name="NUM_duration" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="201,14,0,0" Width="54"></Custom:DecimalUpDown>
-<TextBlock Name="label2" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="279,16,0,0" Width="227" Height="55">NOTE: PLEASE HOLD DOWN YOUR UAV
-This will test your motors are working.
-Motors are tested in a clockwise rotation 
-starting at the front right.</TextBlock>
-<TextBlock Name="linkLabel1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="279,71,0,0" Width="237" Height="30">Please click here to see your motor numbers,
-scroll to the bottom of the page</TextBlock>
+<TextBlock Name="label2" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="279,16,0,0" Width="227" Height="55">ПРИМЕЧАНИЕ: удерживайте БПЛА
+Этот тест проверяет работу моторов.
+Моторы проверяются по часовой стрелке,
+начиная с переднего правого.</TextBlock>
+<TextBlock Name="linkLabel1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="279,71,0,0" Width="237" Height="30">Нажмите здесь, чтобы увидеть номера моторов, прокрутите страницу вниз</TextBlock>
 </Grid>
 </Grid></UserControl>

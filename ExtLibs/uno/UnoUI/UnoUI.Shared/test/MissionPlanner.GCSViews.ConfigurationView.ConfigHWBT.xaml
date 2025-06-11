@@ -13,9 +13,9 @@ xmlns:Custom="using:Custom"
 xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
 xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
-> <Grid><TextBlock Name="label3" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="93,90,0,0" Width="21" Height="17">Pin</TextBlock>
-<TextBlock Name="label2" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="93,66,0,0" Width="31" Height="17">Baud</TextBlock>
-<TextBlock Name="label1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="93,40,0,0" Width="34" Height="17">Name</TextBlock>
+> <Grid><TextBlock Name="label3" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="93,90,0,0" Width="21" Height="17">PIN</TextBlock>
+<TextBlock Name="label2" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="93,66,0,0" Width="31" Height="17">Скорость</TextBlock>
+<TextBlock Name="label1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="93,40,0,0" Width="34" Height="17">Имя</TextBlock>
 <TextBox Name="txt_pin" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="1234" FontSize="8.25" Margin="143,83,0,0" Width="121" Height="20"></TextBox>
 <TextBox Name="txt_name" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="Ardupilot" FontSize="8.25" Margin="143,34,0,0" Width="121" Height="20"></TextBox>
 <ComboBox Name="cmb_baud" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="143,58,0,0" Width="121" Height="21"></ComboBox>

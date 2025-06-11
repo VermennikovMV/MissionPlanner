@@ -7,12 +7,12 @@
         </Grid.RenderTransform>
 
         <TextBox  x:Name="numbertextBox"  Text="0.00" Width="40" HorizontalAlignment="Left" />
-        <Button x:Name="button" Content="UP" Margin="64,0,0,16" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" RenderTransformOrigin="0.5,0.5" >
+        <Button x:Name="button" Content="Вверх" Margin="64,0,0,16" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" RenderTransformOrigin="0.5,0.5" >
             <Button.RenderTransform>
                 <CompositeTransform ScaleX="1" ScaleY="1"/>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="button1" Content="Down" Margin="64,16,0,0" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Button x:Name="button1" Content="Вниз" Margin="64,16,0,0" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
 
     </Grid>
 </UserControl>

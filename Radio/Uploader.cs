@@ -122,35 +122,35 @@ namespace MissionPlanner.Radio
             {
                 if (cmdSync())
                     break;
-                log(string.Format("sync({0}) failed\n", i), 1);
+                log(string.Format("синхронизация({0}) не удалась\n", i), 1);
             }
             if (!cmdSync())
             {
-                log("FAIL: could not synchronise with the bootloader");
-                throw new Exception("SYNC FAIL");
+                log("ОШИБКА: не удалось синхронизироваться с загрузчиком");
+                throw new Exception("СБОЙ СИНХРОНИЗАЦИИ");
             }
 
             checkDevice();
 
-            log("connected to bootloader\n");
+            log("подключено к загрузчику\n");
         }
 
         private void upload_and_verify(IHex image_data)
         {
             if (image_data.bankingDetected && ((byte)id & 0x80) != 0x80)
             {
-                log("This Firmware requires banking support");
-                throw new Exception("This Firmware requires banking support");
+                log("Для этой прошивки требуется поддержка банков");
+                throw new Exception("Для этой прошивки требуется поддержка банков");
             }
 
             if (((byte)id & 0x80) == 0x80)
             {
                 banking = true;
-                log("Using 24bit addresses");
+                log("Используются 24-битные адреса");
             }
 
             // erase the program area first
-            log("erasing program flash\n");
+            log("стирание программной памяти\n");
             cmdErase();
 
             // progress fractions
@@ -163,7 +163,7 @@ namespace MissionPlanner.Radio
             bytes_processed = 0;
 
             // program the flash blocks
-            log("programming\n");
+            log("запись\n");
             foreach (var kvp in image_data)
             {
                 // move the program pointer to the base of this block
@@ -174,7 +174,7 @@ namespace MissionPlanner.Radio
             }
 
             // and read them back to verify that they were programmed
-            log("verifying\n");
+            log("проверка\n");
             foreach (var kvp in image_data)
             {
                 // move the program pointer to the base of this block
@@ -185,7 +185,7 @@ namespace MissionPlanner.Radio
                 bytes_processed += kvp.Value.GetLength(0);
                 progress((double)bytes_processed / bytes_to_process);
             }
-            log("Success\n");
+            log("Успешно\n");
         }
 
         private void upload_block(byte[] data)
@@ -298,7 +298,7 @@ namespace MissionPlanner.Radio
                 send((byte)((address >> 16) & 0xff));
                 send(Code.EOC);
 
-                log("Bank Programming address " + (address >> 16));
+                log("Адрес программирования банка " + (address >> 16));
             }
             else
             {
@@ -351,7 +351,7 @@ namespace MissionPlanner.Radio
             send(Code.EOC);
 
             if (recv() != data)
-                throw new Exception("flash verification failed");
+                throw new Exception("проверка флеш не прошла");
 
             getSync();
         }
@@ -366,8 +366,8 @@ namespace MissionPlanner.Radio
             {
                 if (recv() != data[offset + i])
                 {
-                    log("flash verification failed\n");
-                    throw new Exception("VERIFY FAIL");
+                    log("проверка флеш не прошла\n");
+                    throw new Exception("ПРОВЕРКА НЕ ПРОЙДЕНА");
                 }
             }
 
@@ -387,7 +387,7 @@ namespace MissionPlanner.Radio
             id = (Board)recv();
             freq = (Frequency)recv();
 
-            log("Connected to board " + id + " freq " + freq);
+            log("Соединение с платой " + id + " частота " + freq);
 
             // XXX should be getting valid board/frequency data from firmware file
             if (!Enum.IsDefined(typeof(Board), id))
@@ -428,22 +428,22 @@ namespace MissionPlanner.Radio
                 c = (Code)recv();
                 if (c != Code.INSYNC)
                 {
-                    log(string.Format("got {0:X} when expecting {1:X}\n", (int)c, (int)Code.INSYNC), 2);
-                    throw new Exception("BAD SYNC");
+                    log(string.Format("получено {0:X}, ожидалось {1:X}\n", (int)c, (int)Code.INSYNC), 2);
+                    throw new Exception("НЕВЕРНАЯ СИНХРОНИЗАЦИЯ");
                 }
                 c = (Code)recv();
                 if (c != Code.OK)
                 {
-                    log(string.Format("got {0:X} when expecting {1:X}\n", (int)c, (int)Code.EOC), 2);
-                    throw new Exception("BAD STATUS");
+                    log(string.Format("получено {0:X}, ожидалось {1:X}\n", (int)c, (int)Code.EOC), 2);
+                    throw new Exception("НЕКОРРЕКТНЫЙ СТАТУС");
                 }
             }
             catch
             {
-                log("FAIL: lost synchronisation with the bootloader\n");
-                throw new Exception("SYNC LOST");
+                log("ОШИБКА: синхронизация с загрузчиком потеряна\n");
+                throw new Exception("СИНХРОНИЗАЦИЯ ПОТЕРЯНА");
             }
-            log("in sync\n", 5);
+            log("синхронизировано\n", 5);
         }
 
         /// <summary>
@@ -456,7 +456,7 @@ namespace MissionPlanner.Radio
         {
             byte[] b = { (byte)code };
 
-            log("send ", 5);
+            log("отправлено ", 5);
             foreach (var x in b)
             {
                 log(string.Format(" {0:X}", x), 5);
@@ -476,7 +476,7 @@ namespace MissionPlanner.Radio
         {
             byte[] b = { data };
 
-            log("send ", 5);
+            log("отправлено ", 5);
             foreach (var x in b)
             {
                 log(string.Format(" {0:X}", x), 5);
@@ -487,7 +487,7 @@ namespace MissionPlanner.Radio
             {
                 var fred = 1;
                 fred++;
-                Console.WriteLine("slowdown");
+                Console.WriteLine("замедление");
             }
             port.Write(b, 0, 1);
         }
@@ -498,7 +498,7 @@ namespace MissionPlanner.Radio
             {
                 var fred = 1;
                 fred++;
-                Console.WriteLine("slowdown");
+                Console.WriteLine("замедление");
             }
             port.Write(data, offset, length);
         }
@@ -513,7 +513,7 @@ namespace MissionPlanner.Radio
         {
             var b = new byte[2] { (byte)(data & 0xff), (byte)(data >> 8) };
 
-            log("send ", 5);
+            log("отправлено ", 5);
             foreach (var x in b)
             {
                 log(string.Format(" {0:X}", x), 5);
@@ -536,7 +536,7 @@ namespace MissionPlanner.Radio
             {
             }
             if (port.BytesToRead == 0)
-                throw new Exception("Timeout");
+                throw new Exception("Таймаут");
 
             b = (byte)port.ReadByte();
 

@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Xamarin.MainPage"
              xmlns:pages="clr-namespace:Xamarin" xmlns:gcsviews="clr-namespace:Xamarin.GCSViews">
-	<MasterDetailPage.ToolbarItems>
-		<ToolbarItem Text="toggle radio" Clicked="MenuItem_OnClicked"/>
-	</MasterDetailPage.ToolbarItems>
+        <MasterDetailPage.ToolbarItems>
+                <ToolbarItem Text="переключить радио" Clicked="MenuItem_OnClicked"/>
+        </MasterDetailPage.ToolbarItems>
   <MasterDetailPage.Master>
     <pages:MasterDetailPage1Master x:Name="MasterPage" />
   </MasterDetailPage.Master>

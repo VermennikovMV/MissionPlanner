@@ -1083,8 +1083,7 @@ red LED solid - in firmware update mode</value>
     <value>120</value>
   </data>
   <data name="ROPPRESEND.ToolTip" xml:space="preserve">
-    <value>OPPRESEND enables/disables "opportunistic resend". When enabled the radio will send a packet twice if the serial input buffer has less than 256 bytes in it. The 2nd send is marked as a resend and discarded by the receiving radio if it got the first packet OK. This makes a big difference to the link quality, especially for uplink commands. 
-</value>
+    <value>OPPRESEND включает или отключает "оппортунистическую" повторную отправку. При включении радио отправит пакет дважды, если во входном буфере меньше 256 байт. Второй пакет помечается как повторный и отбрасывается принимающим радиомодулем, если первый был получен успешно. Это заметно улучшает качество связи, особенно для команд восходящего канала.</value>
   </data>
   <data name="&gt;&gt;ROPPRESEND.Name" xml:space="preserve">
     <value>ROPPRESEND</value>
@@ -1975,8 +1974,7 @@ red LED solid - in firmware update mode</value>
     <value>124</value>
   </data>
   <data name="OPPRESEND.ToolTip" xml:space="preserve">
-    <value>OPPRESEND enables/disables "opportunistic resend". When enabled the radio will send a packet twice if the serial input buffer has less than 256 bytes in it. The 2nd send is marked as a resend and discarded by the receiving radio if it got the first packet OK. This makes a big difference to the link quality, especially for uplink commands. 
-</value>
+    <value>OPPRESEND включает или отключает "оппортунистическую" повторную отправку. При включении радио отправит пакет дважды, если во входном буфере меньше 256 байт. Второй пакет помечается как повторный и отбрасывается принимающим радиомодулем, если первый был получен успешно. Это заметно улучшает качество связи, особенно для команд восходящего канала.</value>
   </data>
   <data name="&gt;&gt;OPPRESEND.Name" xml:space="preserve">
     <value>OPPRESEND</value>

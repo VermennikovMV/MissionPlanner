@@ -66,6 +66,6 @@ mc:Ignorable="d"
 </Grid>
 <CheckBox Name="chk_rtcmmsg" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="3,57,0,0" Width="107" Height="18">Inject MSG Type</CheckBox>
 <ComboBox Name="CMB_baudrate" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="3,30,0,0" Width="121" Height="21"></ComboBox>
-<Button Name="BUT_connect" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="130,3,0,0" Width="75" Height="23">Connect</Button>
+<Button Name="BUT_connect" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="130,3,0,0" Width="75" Height="23">Подключить</Button>
 <ComboBox Name="CMB_serialport" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="3,3,0,0" Width="121" Height="21"></ComboBox>
 </Grid></UserControl>

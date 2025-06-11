@@ -13,7 +13,7 @@ xmlns:Custom="using:Custom"
 xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
 xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
-> <Grid><Button Name="myButton2" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="81,27,0,0" Width="75" Height="23">Cancel</Button>
-<Button Name="myButton1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="0,27,0,0" Width="75" Height="23">Accept</Button>
+> <Grid><Button Name="myButton2" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="81,27,0,0" Width="75" Height="23">Отмена</Button>
+<Button Name="myButton1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="0,27,0,0" Width="75" Height="23">Принять</Button>
 <ComboBox Name="comboBox1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="0,0,0,0" Width="156" Height="21"></ComboBox>
 </Grid></UserControl>

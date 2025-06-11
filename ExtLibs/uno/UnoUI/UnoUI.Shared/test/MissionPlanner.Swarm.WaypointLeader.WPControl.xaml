@@ -15,32 +15,32 @@ xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
 > <Grid><TextBlock Name="label5" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="190,135,0,0" Width="90" Height="17">WPNAV_ACCEL</TextBlock>
 <Custom:DecimalUpDown Name="num_wpnav_accel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="282,133,0,0" Width="75"></Custom:DecimalUpDown>
-<Button Name="but_setmoderltland" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="282,65,0,0" Width="75" Height="44">RTL (abandon mission)</Button>
-<CheckBox Name="chk_alt_interleave" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="188,84,0,0" Width="89" Height="18">Alt Interleave</CheckBox>
-<TextBlock Name="label4" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="10,135,0,0" Width="72" Height="17">alt seperation</TextBlock>
+<Button Name="but_setmoderltland" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="282,65,0,0" Width="75" Height="44">RTL (прервать миссию)</Button>
+<CheckBox Name="chk_alt_interleave" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="188,84,0,0" Width="89" Height="18">Чередование высоты</CheckBox>
+<TextBlock Name="label4" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="10,135,0,0" Width="72" Height="17">разделение высоты</TextBlock>
 <Custom:DecimalUpDown Name="num_rtl_alt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="109,133,0,0" Width="75"></Custom:DecimalUpDown>
 <CheckBox Name="chk_V" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="190,65,0,0" Width="31" Height="18">V</CheckBox>
-<TextBox Name="textBox1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="How to Use:
-1. connect all drones including masters (right click top icon bar "connection options")
-2. select the correct vehicle and click set ground master
-3. select the correct vehicle and click set air master
-4. upload the path to the air master drone.
-5. set the seperation and lead options
-6. allow all drones to get gps lock, and calibrate. (failing to do so means they might fail prearm checks, this could be tested beforhand to ensure smooth operation)
-7. ensure your ground master is ready and waiting on the flight path
-8. click start" FontSize="8.25" Margin="363,4,0,0" Width="408" Height="138"></TextBox>
-<TextBlock Name="label3" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="10,109,0,0" Width="83" Height="17">User Offline trig</TextBlock>
+<TextBox Name="textBox1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="Как использовать:
+1. подключите всех дронов, включая мастеров (правый клик по верхней панели "параметры подключения")
+2. выберите нужный аппарат и нажмите назначение наземного мастера
+3. выберите аппарат и нажмите назначение воздушного мастера
+4. загрузите маршрут в воздушного мастера
+5. задайте параметры разделения и опережения
+6. дождитесь GPS фиксации и выполните калибровки, иначе возможен отказ предполетных проверок
+7. убедитесь, что наземный мастер готов и стоит на линии полета
+8. нажмите старт" FontSize="8.25" Margin="363,4,0,0" Width="408" Height="138"></TextBox>
+<TextBlock Name="label3" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="10,109,0,0" Width="83" Height="17">Триггер отсутствия пользователя</TextBlock>
 <Custom:DecimalUpDown Name="num_useroffline" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="109,107,0,0" Width="75"></Custom:DecimalUpDown>
-<Button Name="but_rth" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="282,36,0,0" Width="75" Height="23">set mode rth</Button>
-<Button Name="but_resetmode" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="282,7,0,0" Width="75" Height="23">Reset Mode</Button>
-<TextBlock Name="txt_mode" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="203,12,0,0" Width="59" Height="17">Seperation</TextBlock>
+<Button Name="but_rth" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="282,36,0,0" Width="75" Height="23">установить режим RTH</Button>
+<Button Name="but_resetmode" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="282,7,0,0" Width="75" Height="23">Сбросить режим</Button>
+<TextBlock Name="txt_mode" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="203,12,0,0" Width="59" Height="17">Разделение</TextBlock>
 <Grid Name="PNL_status" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,159,0,0" Width="758" Height="173">
 </Grid>
-<Button Name="but_airmaster" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="109,12,0,0" Width="75" Height="37">Set Air Master</Button>
-<Button Name="but_start" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="190,36,0,0" Width="75" Height="23">Start</Button>
-<TextBlock Name="label2" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="10,83,0,0" Width="29" Height="17">Lead</TextBlock>
+<Button Name="but_airmaster" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="109,12,0,0" Width="75" Height="37">Назначить воздушного мастера</Button>
+<Button Name="but_start" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="190,36,0,0" Width="75" Height="23">Старт</Button>
+<TextBlock Name="label2" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="10,83,0,0" Width="29" Height="17">Опережение</TextBlock>
 <Custom:DecimalUpDown Name="numericUpDown2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="109,81,0,0" Width="75"></Custom:DecimalUpDown>
-<TextBlock Name="label1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="10,57,0,0" Width="84" Height="17">Line Seperation</TextBlock>
+<TextBlock Name="label1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="10,57,0,0" Width="84" Height="17">Интервал линии</TextBlock>
 <Custom:DecimalUpDown Name="numericUpDown1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="109,55,0,0" Width="75"></Custom:DecimalUpDown>
-<Button Name="but_master" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="12,12,0,0" Width="75" Height="37">Set Ground Master</Button>
+<Button Name="but_master" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="12,12,0,0" Width="75" Height="37">Назначить наземного мастера</Button>
 </Grid></UserControl>

@@ -49,6 +49,6 @@ mc:Ignorable="d"
 <Button Name="BUT_doit" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="123,305,0,0" Width="84" Height="40">Pre-process</Button>
 <TextBox Name="TXT_jpgdir" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="" FontSize="8.25" Margin="12,47,0,0" Width="434" Height="20"></TextBox>
 <TextBox Name="TXT_logfile" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="" FontSize="8.25" Margin="12,12,0,0" Width="434" Height="20"></TextBox>
-<Button Name="BUT_browsedir" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="507,42,0,0" Width="75" Height="28">Browse Pictures</Button>
-<Button Name="BUT_browselog" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="507,7,0,0" Width="75" Height="29">Browse Log</Button>
+<Button Name="BUT_browsedir" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="507,42,0,0" Width="75" Height="28">Выбрать фото</Button>
+<Button Name="BUT_browselog" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="507,7,0,0" Width="75" Height="29">Выбрать лог</Button>
 </Grid></UserControl>

@@ -15,7 +15,7 @@ xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
 > <Grid><Button Name="but_remove" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="580,3,0,0" Width="25" Height="20">-</Button>
 <Button Name="but_addchild" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="549,3,0,0" Width="25" Height="20">+</Button>
-<TextBox Name="TXT_warningtext" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="WARNING: {name} is {value}" FontSize="8.25" Margin="261,2,0,0" Width="236" Height="20"></TextBox>
+<TextBox Name="TXT_warningtext" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="ВНИМАНИЕ: {name} = {value}" FontSize="8.25" Margin="261,2,0,0" Width="236" Height="20"></TextBox>
 <Custom:DecimalUpDown Name="NUM_repeattime" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="503,3,0,0" Width="39"></Custom:DecimalUpDown>
 <Custom:DecimalUpDown Name="NUM_warning" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,3,0,0" Width="65"></Custom:DecimalUpDown>
 <ComboBox Name="CMB_condition" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="130,2,0,0" Width="54" Height="21"></ComboBox>

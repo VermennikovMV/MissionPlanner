@@ -13,9 +13,9 @@ xmlns:Custom="using:Custom"
 xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
 xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
-> <Grid><TextBlock Name="linkLabel1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="240,90,0,0" Width="48" Height="17">Details...</TextBlock>
+> <Grid><TextBlock Name="linkLabel1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="240,90,0,0" Width="48" Height="17"Подробнее...</TextBlock>
 <Image Name="imgWarning" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,22,0,0" Width="48" Height="48"></Image>
 <TextBlock Name="lblProgressMessage" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,13,0,0" Width="275" Height="74"></TextBlock>
-<Button Name="btnClose" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="213,109,0,0" Width="75" Height="23">Close</Button>
-<Button Name="btnCancel" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="213,109,0,0" Width="75" Height="23">Cancel</Button>
+<Button Name="btnClose" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="213,109,0,0" Width="75" Height="23">Закрыть</Button>
+<Button Name="btnCancel" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="213,109,0,0" Width="75" Height="23">Отмена</Button>
 </Grid></UserControl>

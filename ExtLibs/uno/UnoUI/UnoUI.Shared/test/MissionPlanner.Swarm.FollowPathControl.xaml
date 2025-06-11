@@ -15,10 +15,10 @@ xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
 > <Grid><Grid Name="PNL_status" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,41,0,0" Width="527" Height="116">
 </Grid>
-<Button Name="BUT_connect" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="301,12,0,0" Width="75" Height="23">Connect MAVs</Button>
-<Button Name="BUT_Start" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="463,12,0,0" Width="75" Height="23">Start</Button>
-<Button Name="BUT_leader" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="382,12,0,0" Width="75" Height="23">Set Leader</Button>
+<Button Name="BUT_connect" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="301,12,0,0" Width="75" Height="23">Подключить БПЛА</Button>
+<Button Name="BUT_Start" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="463,12,0,0" Width="75" Height="23">Старт</Button>
+<Button Name="BUT_leader" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="382,12,0,0" Width="75" Height="23">Назначить ведущего</Button>
 <ComboBox Name="CMB_mavs" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="174,12,0,0" Width="121" Height="21"></ComboBox>
-<Button Name="BUT_Disarm" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="93,12,0,0" Width="75" Height="23">Disarm (exl leader)</Button>
+<Button Name="BUT_Disarm" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="93,12,0,0" Width="75" Height="23">Разоружить (кроме ведущего)</Button>
 <Button Name="BUT_Arm" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="12,12,0,0" Width="75" Height="23">Arm (exl leader)</Button>
 </Grid></UserControl>
