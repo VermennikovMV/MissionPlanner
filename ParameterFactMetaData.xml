@@ -1206,7 +1206,7 @@
     </parameter>
     <parameter default="5.0" name="FW_T_CLMB_MAX" type="FLOAT">
       <short_desc>Максимальная скорость набора</short_desc>
-      <long_desc>This is the best climb rate that the aircraft can achieve with the throttle set to THR_MAX and the airspeed set to the default value. For electric aircraft make sure this number can be achieved towards the end of flight when the battery voltage has reduced. The setting of this parameter can be checked by commanding a positive altitude change of 100m in loiter, RTL or guided mode. If the throttle required to climb is close to THR_MAX and the aircraft is maintaining airspeed, then this parameter is set correctly. If the airspeed starts to reduce, then the parameter is set to high, and if the throttle demand required to climb and maintain speed is noticeably less than FW_THR_MAX, then either FW_T_CLMB_MAX should be increased or FW_THR_MAX reduced.</long_desc>
+      <long_desc>Наилучшая скорость набора, достижимая при газе THR_MAX и стандартной воздушной скорости. Для электрических самолётов убедитесь, что такое значение возможно в конце полёта при снижении напряжения батареи. Проверку можно выполнить, задав набор 100 м в режимах loiter, RTL или guided. Если для набора требуется газ, близкий к THR_MAX, и скорость сохраняется, параметр установлен верно. При падении скорости значение слишком велико; если же требуемый газ значительно меньше FW_THR_MAX, увеличьте FW_T_CLMB_MAX или уменьшите FW_THR_MAX.</long_desc>
       <min>2.0</min>
       <max>10.0</max>
     </parameter>
