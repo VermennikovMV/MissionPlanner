@@ -892,7 +892,7 @@ S15: MAX_WINDOW=131
 
                 EnableConfigControls(false, false);
                 EnableProgrammingControls(false);
-                lbl_status.Text = "Connecting";
+                lbl_status.Text = "Подключение";
 
                 if (Session.PutIntoATCommandMode() == RFD.RFD900.TSession.TMode.AT_COMMAND)
                 {
@@ -901,7 +901,7 @@ S15: MAX_WINDOW=131
 
                     Session.Port.DiscardInBuffer();
 
-                    lbl_status.Text = "Doing Command";
+                    lbl_status.Text = "Выполняется команда";
 
 
                     if (RTI.Text != "")
@@ -946,7 +946,7 @@ S15: MAX_WINDOW=131
                             else
                             {
                                 //Complain that encryption key invalid.
-                                lbl_status.Text = "Fail";
+                                lbl_status.Text = "Ошибка";
                                 MsgBox.CustomMessageBox.Show("Ключ шифрования не является допустимым шестнадцатеричным числом длиной не более " + MaxKeyLength.ToString() + " символов");
                             }
                         }
@@ -963,7 +963,7 @@ S15: MAX_WINDOW=131
                             else
                             {
                                 //Complain that encryption key invalid.
-                                lbl_status.Text = "Fail";
+                                lbl_status.Text = "Ошибка";
                                 MsgBox.CustomMessageBox.Show("Ключ шифрования не является допустимым шестнадцатеричным числом длиной не более " + MaxKeyLength.ToString() + " символов");
                             }
                         }
@@ -997,7 +997,7 @@ S15: MAX_WINDOW=131
                     // return to normal mode
                     doCommand(Session.Port, "ATZ");
 
-                    lbl_status.Text = "Fail";
+                    lbl_status.Text = "Ошибка";
                     MsgBox.CustomMessageBox.Show("Не удалось перейти в режим команд");
                     EnableConfigControls(true, false);
                 }
@@ -1485,7 +1485,7 @@ S15: MAX_WINDOW=131
 
             EnableConfigControls(false, false);
             EnableProgrammingControls(false);
-            lbl_status.Text = "Connecting";
+            lbl_status.Text = "Подключение";
 
             //System.Diagnostics.Debug.WriteLine(SW.ElapsedMilliseconds.ToString() + ":  Putting into AT CMD mode");
 
@@ -1505,7 +1505,7 @@ S15: MAX_WINDOW=131
 
                     Session.Port.DiscardInBuffer();
 
-                    lbl_status.Text = "Doing Command ATI & RTI";
+                    lbl_status.Text = "Выполняется команда ATI и RTI";
 
                     //Set the text box to show the radio version
                     int multipoint_fix = -1;    //If this radio has multipoint firmware, the index within returned strings to use for returned values, otherwise -1.
@@ -1685,7 +1685,7 @@ S15: MAX_WINDOW=131
                     //System.Diagnostics.Debug.WriteLine(SW.ElapsedMilliseconds.ToString() + ":  Done ATI7 cmd");
 
 
-                    lbl_status.Text = "Doing Command ATI5";
+                    lbl_status.Text = "Выполняется команда ATI5";
 
                     var answer = doCommand(Session.Port, "ATI5", true); //Session.ATCClient.DoQueryWithMultiLineResponse("ATI5");// doCommand(Session.Port, "ATI5", true);
 
@@ -1806,7 +1806,7 @@ S15: MAX_WINDOW=131
                             SetupComboForMavlink(RMAVLINK, true);
                         }
 
-                        lbl_status.Text = "Doing Command RTI5";
+                        lbl_status.Text = "Выполняется команда RTI5";
 
                         answer = doCommand(Session.Port, "RTI5", true);
 
@@ -1879,7 +1879,7 @@ S15: MAX_WINDOW=131
                     // off hook
                     Session.PutIntoTransparentMode();
 
-                    lbl_status.Text = "Fail";
+                    lbl_status.Text = "Ошибка";
                     MsgBox.CustomMessageBox.Show("Не удалось перейти в режим команд. Попробуйте перезапустить модем.");
                     EnableConfigControls(true, false);
                 }
@@ -1894,7 +1894,7 @@ S15: MAX_WINDOW=131
             }
             catch (Exception ex)
             {
-                lbl_status.Text = "Error";
+                lbl_status.Text = "Ошибка";
                 MsgBox.CustomMessageBox.Show("Ошибка при чтении " + ex);
             }
             _AlreadyInEncCheckChangedEvtHdlr = false;
@@ -1942,8 +1942,8 @@ S15: MAX_WINDOW=131
 
             comPort.DiscardInBuffer();
 
-            lbl_status.Text = "Doing Command " + cmd;
-            log.Info("Doing Command " + cmd);
+            lbl_status.Text = "Выполняется команда " + cmd;
+            log.Info("Выполняется команда " + cmd);
             comPort.ReadTimeout = 1000;
 
             comPort.Write("\r\n");
@@ -2114,7 +2114,7 @@ S15: MAX_WINDOW=131
                 return;
             }
 
-            lbl_status.Text = "Connecting";
+            lbl_status.Text = "Подключение";
 
             if (Session.PutIntoATCommandMode() == RFD.RFD900.TSession.TMode.AT_COMMAND)
             {
@@ -2125,13 +2125,13 @@ S15: MAX_WINDOW=131
 
                     Session.Port.DiscardInBuffer();
 
-                    lbl_status.Text = "Doing Command RTI & AT&F";
+                    lbl_status.Text = "Выполняется команда RTI и AT&F";
 
                     doCommand(Session.Port, "RT&F");
 
                     doCommand(Session.Port, "RT&W");
 
-                    lbl_status.Text = "Reset";
+                    lbl_status.Text = "Сброс";
 
                     doCommand(Session.Port, "RTZ");
 
@@ -2148,7 +2148,7 @@ S15: MAX_WINDOW=131
 
                 DoCommandShowErrorIfNotOK(Session.Port, "AT&W", "Не удалось записать параметры в EEPROM");
 
-                lbl_status.Text = "Reset";
+                lbl_status.Text = "Сброс";
                 doCommand(Session.Port, "ATZ");
 
                 //Session must be ended because modem rebooted.
@@ -2159,7 +2159,7 @@ S15: MAX_WINDOW=131
                 // off hook
                 Session.PutIntoTransparentMode();
 
-                lbl_status.Text = "Fail";
+                lbl_status.Text = "Ошибка";
                 MsgBox.CustomMessageBox.Show("Не удалось перейти в режим команд. Попробуйте перезапустить модем.");
             }
         }
@@ -2381,7 +2381,7 @@ S15: MAX_WINDOW=131
 
         private void SetPPMFailSafe(string SetCmd, string SaveCmd)
         {
-            lbl_status.Text = "Connecting";
+            lbl_status.Text = "Подключение";
             RFD.RFD900.TSession Session = GetSession();
 
             if (Session == null)
@@ -2395,7 +2395,7 @@ S15: MAX_WINDOW=131
                 //Session.Port.DiscardInBuffer();
                 //doCommand(Session.Port, "AT&T", false, 1);
 
-                lbl_status.Text = "Doing Command";
+                lbl_status.Text = "Выполняется команда";
 
                 Session.Port.DiscardInBuffer();
                 bool Result = Session.ATCClient.DoCommand(SetCmd);
@@ -2412,7 +2412,7 @@ S15: MAX_WINDOW=131
                 }
                 else
                 {
-                    lbl_status.Text = "Fail";
+                    lbl_status.Text = "Ошибка";
                 }
             }
             else
@@ -2420,7 +2420,7 @@ S15: MAX_WINDOW=131
                 // off hook
                 //doCommand(Session.Port, "ATO");
 
-                lbl_status.Text = "Fail";
+                lbl_status.Text = "Ошибка";
                 MsgBox.CustomMessageBox.Show("Не удалось перейти в режим команд");
             }
         }
@@ -2580,7 +2580,7 @@ S15: MAX_WINDOW=131
                 //BUT_getcurrent_Click(this, null);
                 //txt_aeskey.Text = doCommand(Session.Port, "AT&E?").Trim();
                 EncKeyTextBox.Text = RemoveMultiPointLocalNodeID(doCommand(Session.Port, EncKeyQuery).Trim()).Trim();
-                lbl_status.Text = "Done.";
+                lbl_status.Text = "Готово.";
             }
             finally
             {

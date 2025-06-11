@@ -13,10 +13,10 @@ xmlns:Custom="using:Custom"
 xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
 xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
-> <Grid><Button Name="but_uploadflightlog" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="587,391,0,0" Width="75" Height="23">Upload Flight Log</Button>
-<Button Name="but_dlartifact" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="506,391,0,0" Width="75" Height="23">Permission Artifact</Button>
+> <Grid><Button Name="but_uploadflightlog" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="587,391,0,0" Width="75" Height="23">Загрузить лог полёта</Button>
+<Button Name="but_dlartifact" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="506,391,0,0" Width="75" Height="23">Получить разрешение</Button>
 <TextBlock Name="lbl_approvedstatus" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="414,396,0,0" Width="14" Height="17">...</TextBlock>
 <ComboBox Name="cmb_applications" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="211,393,0,0" Width="197" Height="21"></ComboBox>
-<Button Name="but_login" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="3,391,0,0" Width="75" Height="23">Login</Button>
+<Button Name="but_login" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="3,391,0,0" Width="75" Height="23">Войти</Button>
 <ComboBox Name="cmb_drones" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="84,393,0,0" Width="121" Height="21"></ComboBox>
 </Grid></UserControl>

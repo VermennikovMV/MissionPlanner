@@ -36,7 +36,7 @@ mc:Ignorable="d"
 <Button Name="BUT_themecustom" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="249,394,0,0" Width="75" Height="20">Custom</Button>
 <ComboBox Name="CMB_theme" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="107,394,0,0" Width="138" Height="21"></ComboBox>
 <TextBlock Name="label4" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="9,397,0,0" Width="39" Height="17">Theme</TextBlock>
-<Button Name="BUT_logdirbrowse" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="496,366,0,0" Width="75" Height="23">Browse</Button>
+<Button Name="BUT_logdirbrowse" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="496,366,0,0" Width="75" Height="23">Обзор</Button>
 <TextBox Name="txt_log_dir" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="" FontSize="8.25" Margin="107,368,0,0" Width="386" Height="20"></TextBox>
 <TextBlock Name="label3" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="9,371,0,0" Width="49" Height="17">Log Path</TextBlock>
 <TextBlock Name="label2" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="338,274,0,0" Width="81" Height="17">Dist to Home</TextBlock>

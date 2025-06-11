@@ -211,7 +211,7 @@
     <value>Скорость воспроизведения</value>
   </data>
   <data name="BUT_log2kml.Text" xml:space="preserve">
-    <value>Лог &gt; KML</value>
+    <value>Tlog&gt; Kml или График</value>
   </data>
   <data name="BUT_playlog.Text" xml:space="preserve">
     <value>Старт/Стоп</value>
@@ -266,5 +266,8 @@
   </data>
   <data name="dataGridViewImageColumn2.HeaderText" xml:space="preserve">
     <value>Вниз</value>
+  </data>
+  <data name="swapWithMapToolStripMenuItem.Text" xml:space="preserve">
+    <value>Поменять местами с картой</value>
   </data>
 </root>

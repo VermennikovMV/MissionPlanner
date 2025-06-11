@@ -14,11 +14,11 @@ xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
 xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
 > <Grid><TextBlock Name="label1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="98,61,0,0" Width="31" Height="17">SSID</TextBlock>
-<TextBlock Name="label3" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="98,89,0,0" Width="54" Height="17">Password</TextBlock>
+<TextBlock Name="label3" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="98,89,0,0" Width="54" Height="17">Пароль</TextBlock>
 <Grid Name="groupBoxsta" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="316,55,0,0" Width="218" Height="109">
-<TextBlock Name="label9" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="6,52,0,0" Width="49" Height="17">Gateway</TextBlock>
+<TextBlock Name="label9" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="6,52,0,0" Width="49" Height="17">Шлюз</TextBlock>
 <TextBox Name="txt_gateway" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="1234" FontSize="8.25" Margin="83,44,0,0" Width="121" Height="20"></TextBox>
-<TextBlock Name="label8" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="6,78,0,0" Width="40" Height="17">Subnet</TextBlock>
+<TextBlock Name="label8" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="6,78,0,0" Width="40" Height="17">Подсеть</TextBlock>
 <TextBox Name="txt_subnet" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="1234" FontSize="8.25" Margin="83,70,0,0" Width="121" Height="20"></TextBox>
 <TextBlock Name="label7" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="6,26,0,0" Width="15" Height="17">IP</TextBlock>
 <TextBox Name="txt_ip" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="1234" FontSize="8.25" Margin="83,18,0,0" Width="121" Height="20"></TextBox>
@@ -26,7 +26,7 @@ mc:Ignorable="d"
 <TextBox Name="txt_ssid" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="Ardupilot" FontSize="8.25" Margin="175,55,0,0" Width="121" Height="20"></TextBox>
 <ComboBox Name="cmb_baud" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="175,107,0,0" Width="121" Height="21"></ComboBox>
 <TextBox Name="txt_password" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="1234" FontSize="8.25" Margin="175,81,0,0" Width="121" Height="20"></TextBox>
-<TextBlock Name="label4" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="98,142,0,0" Width="46" Height="17">Channel</TextBlock>
+<TextBlock Name="label4" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="98,142,0,0" Width="46" Height="17">Канал</TextBlock>
 <CheckBox Name="chk_mode" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="96,34,0,0" Width="84" Height="18">Режим клиента</CheckBox>
 <TextBlock Name="label5" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="8,165,0,0" Width="14" Height="17">...</TextBlock>
 <TextBlock Name="label2" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="98,116,0,0" Width="31" Height="17">Скорость</TextBlock>

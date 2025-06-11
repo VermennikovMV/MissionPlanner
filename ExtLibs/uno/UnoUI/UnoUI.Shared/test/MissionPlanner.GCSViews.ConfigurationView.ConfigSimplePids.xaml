@@ -15,5 +15,5 @@ xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
 > <Grid><Grid Name="panel1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,4,0,0" Width="556" Height="218">
 </Grid>
-<TextBox Name="TXT_info" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="NOTE: using this interface may reset some off your custom pids." FontSize="8.25" Margin="4,227,0,0" Width="556" Height="58"></TextBox>
+<TextBox Name="TXT_info" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="ПРИМЕЧАНИЕ: использование этого интерфейса может сбросить часть ваших пользовательских PID." FontSize="8.25" Margin="4,227,0,0" Width="556" Height="58"></TextBox>
 </Grid></UserControl>

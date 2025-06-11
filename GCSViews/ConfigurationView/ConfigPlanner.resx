@@ -2887,7 +2887,7 @@
     <value>95</value>
   </data>
   <data name="BUT_mapCacheDir.Text" xml:space="preserve">
-    <value>Open Map Cache</value>
+    <value>Открыть кэш карт</value>
   </data>
   <data name="&gt;&gt;BUT_mapCacheDir.Name" xml:space="preserve">
     <value>BUT_mapCacheDir</value>

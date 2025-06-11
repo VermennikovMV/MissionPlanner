@@ -13,18 +13,14 @@ xmlns:Custom="using:Custom"
 xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
 xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
-> <Grid><CheckBox Name="chk_auto" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="176,410,0,0" Width="107" Height="18">Use Auto Accept</CheckBox>
-<TextBlock Name="label1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="282,8,0,0" Width="272" Height="104">Aim for the White dots.
-Please point the autopilot north, and rotate around
-the pitch axis until level.
-then
-Turn the autopilot 90 degrees, and rotate around the
-roll axis until level.
+> <Grid><CheckBox Name="chk_auto" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="176,410,0,0" Width="107" Height="18">Автоматическое принятие</CheckBox>
+<TextBlock Name="label1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="282,8,0,0" Width="272" Height="104">Старайтесь попасть в белые точки.
+Направьте автопилот на север и вращайте вокруг оси тангажа до выравнивания, затем поверните его на 90 градусов и вращайте вокруг оси крена до выравнивания.
 
-This method should hit every white dot.</TextBlock>
-<CheckBox Name="CHK_rotate" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,411,0,0" Width="160" Height="18">Rotate with each data point</CheckBox>
-<Button Name="btnCancel" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="732,411,0,0" Width="75" Height="23">Cancel</Button>
-<TextBlock Name="linkLabel1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="240,90,0,0" Width="48" Height="17">Details...</TextBlock>
+Этот метод должен задействовать все белые точки.</TextBlock>
+<CheckBox Name="CHK_rotate" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,411,0,0" Width="160" Height="18">Поворачивать на каждой точке</CheckBox>
+<Button Name="btnCancel" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="732,411,0,0" Width="75" Height="23">Отмена</Button>
+<TextBlock Name="linkLabel1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="240,90,0,0" Width="48" Height="17">Подробнее...</TextBlock>
 <Image Name="imgWarning" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,22,0,0" Width="48" Height="48"></Image>
 <TextBlock Name="lblProgressMessage" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,13,0,0" Width="275" Height="74"></TextBlock>
 <Button Name="btnClose" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="213,109,0,0" Width="75" Height="23">Close</Button>

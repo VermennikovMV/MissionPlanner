@@ -13,8 +13,8 @@ xmlns:Custom="using:Custom"
 xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
 xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
-> <Grid><Button Name="but_disablesigning" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="93,185,0,0" Width="75" Height="23">Disable Signing</Button>
-<Button Name="but_add" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="12,185,0,0" Width="75" Height="23">Add</Button>
-<Button Name="but_save" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="535,185,0,0" Width="75" Height="23">Save</Button>
+> <Grid><Button Name="but_disablesigning" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="93,185,0,0" Width="75" Height="23">Отключить подпись</Button>
+<Button Name="but_add" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="12,185,0,0" Width="75" Height="23">Добавить</Button>
+<Button Name="but_save" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="535,185,0,0" Width="75" Height="23">Сохранить</Button>
 <controls:DataGrid Name="dataGridView1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,12,0,0" Width="598"></controls:DataGrid>
 </Grid></UserControl>

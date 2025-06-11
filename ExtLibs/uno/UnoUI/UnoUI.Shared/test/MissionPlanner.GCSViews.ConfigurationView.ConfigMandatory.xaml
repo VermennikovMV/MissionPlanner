@@ -13,5 +13,5 @@ xmlns:Custom="using:Custom"
 xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
 xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
-> <Grid><TextBlock Name="label1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="25,25,0,0" Width="246" Height="78">The following pages are required to be configured before your autopilot will work. Please work though them all.</TextBlock>
+> <Grid><TextBlock Name="label1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="25,25,0,0" Width="246" Height="78">Следующие страницы необходимо настроить, чтобы автопилот работал. Пожалуйста, пройдите их все.</TextBlock>
 </Grid></UserControl>

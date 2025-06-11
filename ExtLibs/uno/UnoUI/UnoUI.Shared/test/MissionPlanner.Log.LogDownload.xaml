@@ -13,13 +13,13 @@ xmlns:Custom="using:Custom"
 xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
 xmlns:PreFlight="using:MissionPlanner.Controls.PreFlight"
 mc:Ignorable="d"
-> <Grid><Button Name="BUT_bintolog" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="12,340,0,0" Width="116" Height="23">.bin to .log</Button>
+> <Grid><Button Name="BUT_bintolog" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="12,340,0,0" Width="116" Height="23">.bin в .log</Button>
 <Button Name="BUT_dumpdf" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="12,243,0,0" Width="116" Height="33">(adv) Dump All DF</Button>
-<Button Name="BUT_firstperson" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,282,0,0" Width="116" Height="23">First Person KML</Button>
-<Button Name="BUT_redokml" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,311,0,0" Width="116" Height="23">Recreate KML</Button>
+<Button Name="BUT_firstperson" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,282,0,0" Width="116" Height="23">KML от первого лица</Button>
+<Button Name="BUT_redokml" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,311,0,0" Width="116" Height="23">Пересоздать KML</Button>
 <TextBox Name="TXT_status" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="" FontSize="8.25" Margin="13,217,0,0" Width="116" Height="20"></TextBox>
-<Button Name="BUT_clearlogs" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,187,0,0" Width="116" Height="23">Clear Logs</Button>
-<Button Name="BUT_DLthese" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,43,0,0" Width="116" Height="23">Download These Log</Button>
-<Button Name="BUT_DLall" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,13,0,0" Width="116" Height="23">Download All Logs</Button>
-<TextBox Name="TXT_seriallog" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="Logs can not be cleared while the drone is armed. Please disarm!" FontSize="8.25" Margin="135,43,0,0" Width="470" Height="352"></TextBox>
+<Button Name="BUT_clearlogs" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,187,0,0" Width="116" Height="23">Очистить логи</Button>
+<Button Name="BUT_DLthese" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,43,0,0" Width="116" Height="23">Скачать эти логи</Button>
+<Button Name="BUT_DLall" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" FontSize="8.25" Margin="13,13,0,0" Width="116" Height="23">Скачать все логи</Button>
+<TextBox Name="TXT_seriallog" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Microsoft Sans Serif" Text="Невозможно очистить логи пока дрон взведён. Пожалуйста, разоружите!" FontSize="8.25" Margin="135,43,0,0" Width="470" Height="352"></TextBox>
 </Grid></UserControl>
