@@ -125,7 +125,7 @@
     <value>Серво/двигатель ВЫХОД</value>
   </data>
   <data name="mavlinkCheckBoxlong_fs.Text" xml:space="preserve">
-    <value>FailSafe Long (20 секунд)</value>
+    <value>FailSafe длинный (20 сек)</value>
   </data>
   <data name="mavlinkCheckBoxthr_fs.Text" xml:space="preserve">
     <value>Дроссель FailSafe</value>
@@ -158,7 +158,7 @@
     <value>Нет блокировки</value>
   </data>
   <data name="mavlinkCheckBoxshort_fs.Text" xml:space="preserve">
-    <value>FailSafe Short (1 сек)</value>
+    <value>FailSafe короткий (1 сек)</value>
   </data>
   <data name="mavlinkNumericUpDownfs_thr_value.ToolTip" xml:space="preserve">
     <value>Дроссель Триггер ШИМ</value>

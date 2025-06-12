@@ -131,7 +131,7 @@
     <value>Калибровка</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>5. Сила тока(Calced)</value>
+    <value>5. Сила тока (расч.)</value>
   </data>
   <data name="label30.Text" xml:space="preserve">
     <value>Монитор</value>
@@ -140,10 +140,10 @@
     <value>1. Изм. напр. батареи:</value>
   </data>
   <data name="label34.Text" xml:space="preserve">
-    <value>3. Разд. напр. (Calced):</value>
+    <value>3. Разд. напр. (расч.):</value>
   </data>
   <data name="label33.Text" xml:space="preserve">
-    <value>2. Напр. батареи (Calced):</value>
+    <value>2. Напр. батареи (расч.):</value>
   </data>
   <data name="label35.Text" xml:space="preserve">
     <value>6. Ампер на вольт:</value>

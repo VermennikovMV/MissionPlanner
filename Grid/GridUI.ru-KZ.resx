@@ -152,10 +152,10 @@
     <value>Поле обзора по Верт. [м]</value>
   </data>
   <data name="label20.Text" xml:space="preserve">
-    <value>Поле обзорапо Гориз. [m]</value>
+    <value>Поле обзора по Гориз. [м]</value>
   </data>
   <data name="groupBox_copter.Text" xml:space="preserve">
-    <value>Опции Copter</value>
+    <value>Опции коптера</value>
   </data>
   <data name="label21.Text" xml:space="preserve">
     <value>Расчетные значения</value>
@@ -167,7 +167,7 @@
     <value>Расстояние:</value>
   </data>
   <data name="label24.Text" xml:space="preserve">
-    <value>Скорость полета (est)</value>
+    <value>Скорость полета (расч.)</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Расстояние между линиями [м]</value>
@@ -251,7 +251,7 @@
     <value>Разблокировать сетку</value>
   </data>
   <data name="label31.Text" xml:space="preserve">
-    <value>Время полета (est):</value>
+    <value>Время полета (расч.):</value>
   </data>
   <data name="label34.Text" xml:space="preserve">
     <value>Картинки:</value>
@@ -263,7 +263,7 @@
     <value>Нет полосок:</value>
   </data>
   <data name="label35.Text" xml:space="preserve">
-    <value>Фотография каждые (est):</value>
+    <value>Фотография каждые (расч.):</value>
   </data>
   <data name="label38.Text" xml:space="preserve">
     <value>Control-S для сохранения в файл Control-O для загрузки из файла</value>

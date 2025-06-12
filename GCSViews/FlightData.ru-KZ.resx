@@ -183,7 +183,7 @@
     <value>Перем. к тек. МТ</value>
   </data>
   <data name="BUT_log2kml.Text" xml:space="preserve">
-    <value>Tlog&gt; Kml или Graph</value>
+    <value>Tlog -> KML или график</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Увел.</value>
